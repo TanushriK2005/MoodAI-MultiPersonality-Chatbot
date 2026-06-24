@@ -1,6 +1,6 @@
 # 🤖 MoodAI – Multi-Personality AI Chatbot
 
-A Generative AI-powered chatbot that allows users to interact with different AI personalities such as **Angry**, **Funny**, and **Sad**. Built using **LangChain**, **Mistral AI**, **Streamlit**, and **Hugging Face Embeddings**, the application demonstrates prompt engineering, conversation memory, and interactive AI-driven conversations.
+A Generative AI-powered chatbot built using **LangChain**, **Mistral AI**, **Streamlit**, and **Hugging Face Embeddings**. MoodAI allows users to interact with different AI personalities such as **Angry**, **Funny**, and **Sad**, while maintaining contextual conversation memory.
 
 ---
 
@@ -14,29 +14,31 @@ A Generative AI-powered chatbot that allows users to interact with different AI 
 
 * 💬 Context-Aware Conversations
 
-  * Maintains conversation history
-  * Uses LangChain message objects for memory
+  * Maintains chat history
+  * Context-aware responses
+  * Memory using LangChain message objects
 
 * 🧠 Prompt Engineering
 
-  * Dynamic system prompts based on selected personality
-  * Distinct conversational behavior for each mode
+  * Dynamic system prompts
+  * Personality-based responses
+  * Different conversational behaviors
 
 * 🎨 Interactive Web Interface
 
   * Built with Streamlit
-  * Clean and responsive chat interface
-  * Real-time AI responses
+  * Modern chat interface
+  * Real-time responses
 
 * ⚡ Mistral AI Integration
 
   * Powered by Mistral Large Language Models
-  * Fast and intelligent conversational responses
+  * Fast and intelligent responses
 
 * 🤗 Hugging Face Embeddings
 
   * Embedding generation support
-  * Foundation for future RAG-based enhancements
+  * Foundation for future RAG applications
 
 ---
 
@@ -44,15 +46,15 @@ A Generative AI-powered chatbot that allows users to interact with different AI 
 
 ### 😡 Angry Mode
 
-![Angry Mode](images/angry-mode-demo.png)
+![Angry Mode](screenshots/angry-mode-demo.png)
 
 ### 😂 Funny Mode
 
-![Funny Mode](images/funny-mode-demo.png)
+![Funny Mode](screenshots/funny-mode-demo.png)
 
 ### 😢 Sad Mode
 
-![Sad Mode](images/sad-mode-demo.png)
+![Sad Mode](screenshots/sad-mode-demo.png)
 
 ---
 
@@ -81,7 +83,7 @@ MoodAI-MultiPersonality-Chatbot
 ├── embeddingmodels
 │   └── huggingface_embedding.py
 │
-├── images
+├── screenshots
 │   ├── angry-mode-demo.png
 │   ├── funny-mode-demo.png
 │   └── sad-mode-demo.png
@@ -90,6 +92,8 @@ MoodAI-MultiPersonality-Chatbot
 ├── .gitignore
 └── README.md
 ```
+
+---
 
 ## ⚙️ Installation
 
@@ -130,7 +134,7 @@ pip install -r requirements.txt
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory.
 
 ```env
 MISTRAL_API_KEY=your_mistral_api_key
@@ -138,7 +142,7 @@ MISTRAL_API_KEY=your_mistral_api_key
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Running the Application
 
 ```bash
 streamlit run chatmodels/UIchatbot.py
@@ -152,14 +156,30 @@ http://localhost:8501
 
 ---
 
+## 🎭 Available Personalities
+
+### 😡 Angry Mode
+
+Responds aggressively and impatiently while answering questions.
+
+### 😂 Funny Mode
+
+Responds with humor, jokes, and playful interactions.
+
+### 😢 Sad Mode
+
+Responds in a melancholic and emotional manner.
+
+---
+
 ## 🧠 How It Works
 
 1. User selects an AI personality.
-2. A system prompt is generated dynamically.
+2. A dynamic system prompt is generated.
 3. User messages are stored using LangChain message objects.
 4. Conversation history is maintained throughout the session.
 5. Mistral AI generates context-aware responses.
-6. Responses are displayed through Streamlit's interactive chat interface.
+6. Responses are displayed through Streamlit's chat interface.
 
 ---
 
@@ -202,3 +222,4 @@ AI/ML & Generative AI Enthusiast
 ## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
+
