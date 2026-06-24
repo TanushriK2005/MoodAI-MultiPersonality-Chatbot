@@ -1,0 +1,14 @@
+langchain
+langchain-core
+langchain-mistralai
+langchain-huggingface
+
+mistralai
+
+streamlit
+python-dotenv
+
+sentence-transformers
+transformers
+torch
+huggingface-hub
